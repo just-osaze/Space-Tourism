@@ -8,8 +8,8 @@ module.exports = {
         'desktop-image': "url('../src/home/background-home-desktop.jpg')",
 
         'mobile-crew': "url('../src/crew/background-crew-mobile.jpg')",
-        'tablet-crew': "url('./src/crew/background-crew-tablet.jpg')",
-        'desktop-crew': "url('./src/crew/background-crew-desktop.jpg')",
+        'tablet-crew': "url('../src/crew/background-crew-tablet.jpg')",
+        'desktop-crew': "url('../src/crew/background-crew-desktop.jpg')",
 
         'mobile-technology': "url('../src/technology/background-technology-mobile.jpg')",
         'tablet-technology': "url('../src/technology/background-technology-tablet.jpg')",

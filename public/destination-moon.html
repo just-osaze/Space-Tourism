@@ -5,33 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+    
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="bg-mobile-destination h-scren w-screen bg-no-repeat bg-cover bg-cente">
+    <header>
+      <div>
+        <!-- navbar -->
+        <nav class="w-full py-4 md:py-0 px-8 text-lg text-gray-700">
+          <div class="flex items-center justify-between">
+            <!-- logo -->
+            <a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/>
+                  <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/>
+                </g>
+              </svg>
+            </a>
+            <!-- hamburger -->
+            <a href="#" class="h-6 w-6 cursor-pointer md:hidden block">
+              <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" width="24" height="21">
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- navbar menu -->
+          <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+            <ul class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0 ">
+              <li><a class="md:p-4 py-2 block hover:text-purple-400" href="index.html">00 Home</a></li>
+              <li><a class="md:p-4 py-2 block hover:text-purple-400" href="destination-moon.html">01 Destination</a></li>
+              <li><a class="md:p-4 py-2 block hover:text-purple-400" href="crew-commander.html">02 Crew</a></li>
+              <li><a class="md:p-4 py-2 block hover:text-purple-400" href="technology-vehicle.html">03 Technology</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-screen mt-4 flex flex-col items-center justify-center">
+      <section>
+        <div>
+          <p class="uppercase tracking-widest text-white"><span class="text-[#979797] font-extrabold mr-3">01</span>Pick your destination</p>
+        </div>
+        <div class="flex justify-center mt-8">
+          <img class="h-40 w-40" src="../src/destination/image-moon.png" alt="crew-commander">
+        </div> 
+      </section>        
+
+      <section>
+        <div class=" mt-6">
+          <nav class="uppercase">
+            <ul class="flex flex-row gap-8">
+              <li class="text-white text-sm underline underline-offset-8 decoration-4"><a href="destination-moon.html">Moon</a></li>
+              <li class="text-white text-sm hover:underline hover:underline-offset-8 decoration-4 decoration-[#979797]"><a href="destination-mars.html">Mars</a></li>
+              <li class="text-white text-sm hover:underline hover:underline-offset-8 decoration-4 decoration-[#979797]"><a href="destination-europa.html">Europa</a></li>
+              <li class="text-white text-sm hover:underline hover:underline-offset-8 decoration-4 decoration-[#979797]"><a href="destination-titan.html">Titan</a></li>
+              
+            </ul>
+          </nav>                         
+      </section>
+
+      <div>
+        <h1 class="mt-2 text-[56px] uppercase tracking-widest text-white">moon</h1>
+      </div>
+
+      <div>
+        <p class=" px-4 leading-relaxed text-center text-[#D0D6F9]">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+      </div>
+
+      <div class="w-screen px-8 mt-8">
+        <div class="border-t border-[#D0D6F9]"></div>
+      </div> 
+
+      <section class="flex flex-col justify-center items-center mt-10">
+        <div>
+          <p class="text-sm uppercase text-[#D0D6F9] tracking-widest">Avg. distance</p>
+        </div>
+        <div>
+          <p class="text-3xl uppercase text-white tracking-wide">384,400 km</p>
+        </div>
+
+        <div class="mt-6">
+          <p class="uppercase text-sm text-[#D0D6F9] tracking-widest">Est. travel time</p>
+        </div>
+        <div>
+          <p class="text-3xl uppercase text-white tracking-wide">3 days</p>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="./main.js"></script>
+</html>   
+
   
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+  
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
-</body>
-</html>
+  
+  

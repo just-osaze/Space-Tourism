@@ -14,6 +14,10 @@ module.exports = {
         'mobile-technology': "url('../src/technology/background-technology-mobile.jpg')",
         'tablet-technology': "url('../src/technology/background-technology-tablet.jpg')",
         'desktop-technology': "url('../src/technology/background-technology-desktop.jpg')",
+
+        'mobile-destination': "url('../src/destination/background-destination-mobile.jpg')",
+        'tablet-destination': "url('../src/destination/background-destination-tablet.jpg')",
+        'desktop-destination': "url('../src/destination/background-destination-desktop.jpg')",
         }), 
       },
   },

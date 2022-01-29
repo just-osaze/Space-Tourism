@@ -9,12 +9,12 @@
     
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body class="bg-mobile-image md:bg-tablet-image h-screen w-screen bg-no-repeat bg-cover bg-left">
+  <body class="bg-mobile-image md:bg-tablet-image xl:bg-desktop-image h-screen w-screen bg-no-repeat bg-cover xl:bg-auto">
     <header>
       <div>
         <!-- navbar -->
-        <nav class="md:flex w-full py-4 px-8 md:py-0 md:pr-0 text-lg text-white">
-          <div class="flex items-center justify-between">
+        <nav class="md:flex w-full py-4 px-8 md:py-0 md:pr-0 text-xl text-white">
+          <div class="flex items-center justify-between xl:mt-10 xl:pl-6">
             <!-- logo -->
             <a href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -23,6 +23,10 @@
                 </g>
               </svg>
             </a>
+            <!-- horizontal line -->
+            <div class="ml-12 w-[473px] hidden xl:block">
+              <div class="border-t border-[#979797]"></div>
+            </div> 
             <!-- hamburger -->
             <a href="#" class="h-6 w-6 cursor-pointer md:hidden block">
               <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" width="24" height="21">
@@ -34,19 +38,19 @@
           </div>
           <!-- navbar menu -->
           <div class="hidden mt-8 w-full md:mt-0 md:flex justify-end" id="menu">
-            <ul class="uppercase text-base md:tracking-wide md:flex md:justify-between md:text-sm md:py-4 md:px-4 md:bg-[#151923]">
-              <li><a class="md:p-4 py-2 block md:underline underline-offset-[30px] decoration-4" href="index.html"><span class="md:hidden">00</span> Home</a></li>
-              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="destination-moon.html"><span class="md:hidden">01</span> Destination</a></li>
-              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="crew-commander.html"><span class="md:hidden">02</span> Crew</a></li>
-              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="technology-vehicle.html"><span class="md:hidden">03</span> Technology</a></li>
+            <ul class="uppercase text-base md:tracking-wide md:flex md:justify-between md:text-sm md:py-4 md:px-4 md:bg-[#151923] xl:bg-[#979797] xl:mt-10 xl:bg-opacity-10 xl:backdrop-blur-xl xl:w-full xl:ml- xl:pl-16 xl:justify-start xl:gap-6">
+              <li><a class="md:p-4 py-2 block md:underline underline-offset-[30px] decoration-4" href="index.html"><span class="md:invisible xl:visible">00</span> Home</a></li>
+              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="destination-moon.html"><span class="md:invisible xl:visible">01</span> Destination</a></li>
+              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="crew-commander.html"><span class="md:invisible xl:visible">02</span> Crew</a></li>
+              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="technology-vehicle.html"><span class="md:invisible xl:visible">03</span> Technology</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
 
-    <main class="uppercase w-screen mt-8 text-center flex flex-col items-center justify-center">
-      <section class="text-center flex flex-col items-center justify-center">
+    <main class="uppercase w-screen mt-8 text-center flex flex-col items-center justify-center xl:mt-48 xl:items-start">
+      <section class="text-center flex flex-col items-center justify-center xl:ml-40 xl:items-start">
         <div>
           <p class="text-sm md:text-xl md:mt-20 tracking-widest text-[#D0D6F9]">so, you want to travel to</p>
         </div>
@@ -56,7 +60,7 @@
         </div>
     
         <div class="">
-        <p class="normal-case w-full px-8 mt-6 text-sm text-[#D0D6F9] leading-6 md:leading-loose text-center md:w-[640px] md:text-xl md:mt-2">
+        <p class="normal-case w-full px-8 mt-6 text-sm text-[#D0D6F9] leading-6 md:leading-loose text-center md:w-[640px] md:text-xl md:mt-2 xl:text-[18px] xl:leading-loose xl:w-[500px] xl:px-0 xl:text-left">
           Let’s face it; if you want to go to space, you might as well genuinely go to 
           outer space and not hover kind of on the edge of it. Well sit back, and relax 
           because we’ll give you a truly out of this world experience!
@@ -64,8 +68,8 @@
         </div>
       </section>
 
-      <div class="mt-12">
-      <p class="bg-white h-40 w-40 mt-6 ring-[#979797] hover:ring-[80px] md:h-64 md:w-64 md:mt-20 uppercase tracking-widest md:text-4xl flex items-center justify-center rounded-full text-[#0b0d17] cursor-pointer">Explore</p>
+      <div class="mt-12 xl:-mt-[370px] xl:ml-[1000px]">
+        <p class="bg-white h-40 w-40 mt-6 ring-[#979797] hover:ring-[70px] hover:ring-opacity-30 md:h-64 md:w-64 md:mt-20 uppercase tracking-widest md:text-4xl flex items-center justify-center rounded-full text-[#0b0d17] cursor-pointer">Explore</p>
       </div>
     </main>
   </body>

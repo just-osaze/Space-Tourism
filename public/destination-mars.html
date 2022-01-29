@@ -9,12 +9,12 @@
     
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body class="bg-mobile-destination md:bg-tablet-destination h-scren w-screen bg-no-repeat bg-cover">
+  <body class="bg-mobile-image md:bg-tablet-image xl:bg-desktop-destination h-screen w-screen bg-no-repeat bg-cover xl:bg-auto">
     <header>
       <div>
         <!-- navbar -->
-        <nav class="w-full py-4 px-8 md:flex md:py-0 md:pr-0 text-lg text-white">
-          <div class="flex items-center justify-between">
+        <nav class="md:flex w-full py-4 px-8 md:py-0 md:pr-0 text-xl text-white">
+          <div class="flex items-center justify-between xl:mt-10 xl:pl-6">
             <!-- logo -->
             <a href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -23,6 +23,10 @@
                 </g>
               </svg>
             </a>
+            <!-- horizontal line -->
+            <div class="ml-12 w-[473px] hidden xl:block">
+              <div class="border-t border-[#979797]"></div>
+            </div> 
             <!-- hamburger -->
             <a href="#" class="h-6 w-6 cursor-pointer md:hidden block">
               <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" width="24" height="21">
@@ -33,12 +37,12 @@
             </a>
           </div>
           <!-- navbar menu -->
-          <div class="hidden w-full md:flex md:justify-end" id="menu">
-            <ul class="uppercase text-base pt-4 md:tracking-wide md:flex md:justify-between md:text-sm md:py-4 md:px-4 md:bg-[#151923]">
-              <li><a class="md:p-4 py-2 block md:hover:underline underline-offset-[30px] decoration-4 decoration-[#979797]" href="index.html"><span class="md:hidden">00</span> Home</a></li>
-              <li><a class="md:p-4 py-2 block md:underline underline-offset-[30px] decoration-4" href="destination-moon.html"><span class="md:hidden">01</span> Destination</a></li>
-              <li><a class="md:p-4 py-2 block md:hover:underline underline-offset-[30px] decoration-4 decoration-[#979797]" href="crew-commander.html"><span class="md:hidden">02</span> Crew</a></li>
-              <li><a class="md:p-4 py-2 block md:hover:underline underline-offset-[30px] decoration-4 decoration-[#979797]" href="technology-vehicle.html"><span class="md:hidden">03</span> Technology</a></li>
+          <div class="hidden mt-8 w-full md:mt-0 md:flex justify-end" id="menu">
+            <ul class="uppercase text-base md:tracking-wide md:flex md:justify-between md:text-sm md:py-4 md:px-4 md:bg-[#151923] xl:bg-[#979797] xl:mt-10 xl:bg-opacity-10 xl:backdrop-blur-xl xl:w-full xl:ml- xl:pl-16 xl:justify-start xl:gap-6">
+              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="index.html"><span class="md:invisible xl:visible">00</span> Home</a></li>
+              <li><a class="md:p-4 py-2 block md:underline underline-offset-[30px] decoration-4" href="destination-moon.html"><span class="md:invisible xl:visible">01</span> Destination</a></li>
+              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="crew-commander.html"><span class="md:invisible xl:visible">02</span> Crew</a></li>
+              <li><a class="md:p-4 py-2 block md:hover:underline hover:underline-offset-[30px] decoration-4 decoration-[#979797]" href="technology-vehicle.html"><span class="md:invisible xl:visible">03</span> Technology</a></li>
             </ul>
           </div>
         </nav>
@@ -47,16 +51,16 @@
 
     <main class="uppercase w-screen mt-4 flex flex-col items-center md:block md:-mt-10">
       <section>
-        <div class="md:px-10">
+        <div class="md:px-10 xl:mt-32 xl:ml-[110px]">
           <p class="tracking-widest text-white md:text-xl md:mt-16"><span class="text-[#979797] font-extrabold mr-3">01</span>Pick your destination</p>
         </div>
-        <div class="flex justify-center mt-8 md:mt-16">
-          <img class="h-40 w-40 md:h-80 md:w-80" src="../src/destination/image-mars.png" alt="image-mars">
+        <div class="flex justify-center mt-8 md:mt-16 xl:justify-start xl:ml-48 xl:mt-[100px]">
+          <img class="h-40 w-40 md:h-80 md:w-80 xl:h-[445px] xl:w-[445px]" src="../src/destination/image-mars.png" alt="image-mars">
         </div> 
       </section>        
       
       <section>
-        <div class="mt-6 md:flex md:justify-center md:mt-16">
+        <div class="mt-6 md:flex md:justify-center md:mt-16 xl:-mt-[480px] xl:ml-[500px]">
           <nav>
             <ul class="flex flex-row gap-8">
               <li class="text-white text-sm md:text-base hover:underline hover:underline-offset-8 decoration-4 hover:md:underline-offset-[16px] decoration-[#979797]"><a href="destination-moon.html">Moon</a></li>
@@ -68,24 +72,24 @@
       </section>
 
       <div>
-        <h1 class="mt-2 text-[56px] uppercase tracking-widest text-white md:flex md:justify-center md:mt-8">Mars</h1>
+        <h1 class="mt-2 text-[56px] uppercase tracking-widest text-white md:flex md:justify-center md:mt-8 xl:ml-[400px]">Mars</h1>
       </div>
 
       <div>
-        <p class="normal-case md:mt-4 md:px-[82px] px-4 leading-relaxed text-center text-[#D0D6F9]">
+        <p class="normal-case md:mt-4 md:px-[82px] px-4 leading-relaxed text-center text-[#D0D6F9] xl:text-[18px] xl:leading-loose xl:text-left xl:ml-[738px] xl:w-[620px]">
           Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
           the tallest planetary mountain in our solar system. It’s two and a half times 
           the size of Everest!
         </p>
       </div>
 
-      <div class="w-screen px-8 mt-8 md:px-20">
+      <div class="w-screen px-8 mt-8 md:px-20 xl:w-[580px] xl:ml-[740px]">
         <div class="border-t border-[#D0D6F9]"></div>
       </div> 
 
-      <section class="flex flex-col justify-center items-center mt-10 md:flex-row md:gap-40 md:mb-10">
+      <section class="flex flex-col justify-center items-center mt-10 md:flex-row md:gap-40 md:mb-10 xl:ml-[570px]">
         <div>
-          <div class="text-center">
+          <div class="text-center xl:text-left">
             <p class="text-sm uppercase text-[#D0D6F9] tracking-widest">Avg. distance</p>
           </div>
           <div>
@@ -93,7 +97,7 @@
           </div>
         </div>
         
-        <div>
+        <div class="xl:-ml-20">
           <div class="text-center mt-6 md:mt-0">
             <p class="uppercase text-sm text-[#D0D6F9] tracking-widest">Est. travel time</p>
           </div>
